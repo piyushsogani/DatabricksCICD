@@ -20,4 +20,4 @@ jobs:
         DATABRICKS_HOST: ${{ secrets.DB_HOST }}
         DATABRICKS_TOKEN: ${{ secrets.DB_TOKEN }}
       run: |
-        databricks repos update --path /Repos/DatabricksCICD --branch main
+        databricks repos update --path /Repos/Piyush/DatabricksCICD --branch main
