@@ -17,7 +17,7 @@ jobs:
 
     - name: Remote update Prod Repo
       env:
-        DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-        DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        DATABRICKS_HOST: ${{ secrets.DB_HOST }}
+        DATABRICKS_TOKEN: ${{ secrets.DB_TOKEN }}
       run: |
         databricks repos update --path /Repos/DatabricksCICD --branch main
